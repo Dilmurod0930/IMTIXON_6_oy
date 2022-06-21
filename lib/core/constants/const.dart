@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 class ColorConst {
-  static  Color blueConst = Colors.blue;
-  static  Color whiteConst = Colors.white;
-  static  Color blackConst = Colors.black;
-  static  Color yellowConst = Colors.yellow;
+  static Color blueConst = Colors.blue;
+  static Color whiteConst = Colors.white;
+  static Color blackConst = Colors.black;
+  static Color yellowConst = Colors.yellow;
+  static Color greyConst = Colors.grey;
+  static Color redConst = Colors.red;
 }
 
 class PaddingMargenConst {
@@ -20,7 +22,7 @@ class FontConst {
   static const double kSmallFont = 12.0;
   static const double kMediumFont = 15.0;
   static const double kLargeFont = 20.0;
-  static const double kExtraLargeFont = 25.0;
+  static const double kExtraLargeFont = 28.0;
 }
 
 class RadiusConst {
