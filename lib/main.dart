@@ -1,5 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
+import 'package:imtixon_6_oy/core/components/theme_comp.dart';
 import 'package:imtixon_6_oy/provider/auth_provider.dart';
 import 'package:imtixon_6_oy/routes/routes.dart';
 import 'package:provider/provider.dart';
@@ -23,7 +24,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
-      theme: ThemeData(primarySwatch: Colors.blue),
+      theme: darkMode,
       debugShowCheckedModeBanner: false,
       onGenerateRoute: MyRoutes.instanse.onGenerate,
       initialRoute: '/splash',

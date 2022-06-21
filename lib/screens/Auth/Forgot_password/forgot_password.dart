@@ -1,11 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:imtixon_6_oy/core/constants/const.dart';
 import 'package:imtixon_6_oy/provider/auth_provider.dart';
-import 'package:imtixon_6_oy/screens/Splash/splash_initial.dart';
 import 'package:provider/provider.dart';
 
-class SignINPage extends StatelessWidget {
-  const SignINPage({Key? key}) : super(key: key);
+class ForgotPasswordPage extends StatelessWidget {
+  const ForgotPasswordPage({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -24,7 +23,7 @@ class SignINPage extends StatelessWidget {
                   Padding(
                     padding: const EdgeInsets.all(15.0),
                     child: Text(
-                      "Log In",
+                      "Forgot password",
                       style: TextStyle(
                           fontSize: FontConst.kExtraLargeFont,
                           fontWeight: FontWeight.bold,
@@ -57,45 +56,17 @@ class SignINPage extends StatelessWidget {
                                   fillColor: Colors.red),
                             ),
                           ),
-                          const SizedBox(height: 25),
-                          Container(
-                            decoration: BoxDecoration(
-                              color: ColorConst.greyConst,
-                              borderRadius: BorderRadius.circular(12),
-                            ),
-                            child: TextFormField(
-                              controller:
-                                  context.watch<LoginProvider>().passController,
-                              decoration: const InputDecoration(
-                                border: OutlineInputBorder(
-                                  borderRadius: BorderRadius.all(
-                                    Radius.circular(15.0),
-                                  ),
-                                ),
-                                hintText: 'Your password',
-                              ),
-                            ),
+                          SizedBox(
+                              height:
+                                  MediaQuery.of(context).size.height * 0.009),
+                          Text(
+                            "Enter your registered email. We’ll send you your password",
+                            style: TextStyle(
+                                color: ColorConst.greyConst,
+                                fontSize: FontConst.kSmallFont),
                           ),
-                          const SizedBox(height: 15),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              const SizedBox(),
-                              TextButton(
-                                onPressed: () {
-                                  Navigator.pushNamedAndRemoveUntil(
-                                      context, "/password", (route) => false);
-                                },
-                                child: Text(
-                                  'Forgot password?',
-                                  style: TextStyle(
-                                    color: ColorConst.greyConst,
-                                  ),
-                                ),
-                              ),
-                            ],
-                          ),
-                          const SizedBox(height: 15),
+                          SizedBox(
+                              height: MediaQuery.of(context).size.height * 0.1),
                           Container(
                             height: MediaQuery.of(context).size.height * 0.074,
                             width: MediaQuery.of(context).size.width * 0.9,
@@ -107,7 +78,7 @@ class SignINPage extends StatelessWidget {
                             ),
                             child: TextButton(
                               child: Text(
-                                'Log In',
+                                'Send my password',
                                 style: TextStyle(
                                   fontSize: 22,
                                   fontWeight: FontWeight.bold,
@@ -119,12 +90,7 @@ class SignINPage extends StatelessWidget {
                               },
                             ),
                           ),
-                         
-                        ],
-                      ),
-                    ),
-                  ),
-                   Row(
+                          Row(
                             mainAxisAlignment: MainAxisAlignment.center,
                             children: [
                               TextButton(
@@ -146,46 +112,9 @@ class SignINPage extends StatelessWidget {
                               )
                             ],
                           ),
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                        children: [
-                          Divider(
-                            color: ColorConst.redConst,
-                            thickness: 5,
-                            endIndent: 12,
-                          ),
-                          Text(
-                            'or continue with',
-                            style: TextStyle(color: ColorConst.greyConst),
-                          ),
-                          Divider(
-                            color: ColorConst.redConst,
-                            thickness: 5,
-                            endIndent: 12,
-                          )
-                        ]),
-                  ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                    children: [
-                      CircleAvatar(
-                          radius: 38,
-                          backgroundColor: ColorConst.whiteConst,
-                          child: Image.asset(
-                            'assets/images/google.png',
-                            fit: BoxFit.contain,
-                          )),
-                      CircleAvatar(
-                          backgroundColor: ColorConst.whiteConst,
-                          radius: 38,
-                          child: Image.asset('assets/images/fasbook.png')),
-                      CircleAvatar(
-                          backgroundColor: ColorConst.whiteConst,
-                          radius: 38,
-                          child: Image.asset('assets/images/apple.png')),
-                    ],
+                        ],
+                      ),
+                    ),
                   ),
                 ],
               ),
@@ -193,13 +122,13 @@ class SignINPage extends StatelessWidget {
           ),
         ),
       ),
-      floatingActionButton: IconButton(
-        icon: const Icon(Icons.add),
-        onPressed: () {
-          Navigator.push(
-              context, MaterialPageRoute(builder: (context) => Splash()));
-        },
-      ),
+      // floatingActionButton: IconButton(
+      //   icon: const Icon(Icons.add),
+      //   onPressed: () {
+      //     Navigator.push(
+      //         context, MaterialPageRoute(builder: (context) => Splash()));
+      //   },
+      // ),
     );
   }
 }
