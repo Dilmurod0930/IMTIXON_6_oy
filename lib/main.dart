@@ -12,8 +12,9 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(primarySwatch: Colors.blue),
-      initialRoute: '/splash',
+      debugShowCheckedModeBanner: false,
       onGenerateRoute: MyRoutes.instanse.onGenerate,
+      initialRoute: '/splash',
     );
   }
 }

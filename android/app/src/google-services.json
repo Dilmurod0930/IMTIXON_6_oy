@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "998082002872",
+    "project_id": "imtixon-ubc",
+    "storage_bucket": "imtixon-ubc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:998082002872:android:bb06f0abae1a37158e994d",
+        "android_client_info": {
+          "package_name": "com.dilmurod.imtixon_6_oy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "998082002872-vvusb4i19dnsaaqtv6rvh4rdkevfanf2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBdtnrdAjNIrsAhalbqinsv_YpAzo1WZAY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "998082002872-vvusb4i19dnsaaqtv6rvh4rdkevfanf2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

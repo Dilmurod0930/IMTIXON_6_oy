@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 
 class ColorConst {
-  static const Color blueConst = Colors.blue;
-  static const Color whiteConst = Colors.white;
-  static const Color blackConst = Colors.black;
-  static const Color yellowConst = Colors.yellow;
+  static  Color blueConst = Colors.blue;
+  static  Color whiteConst = Colors.white;
+  static  Color blackConst = Colors.black;
+  static  Color yellowConst = Colors.yellow;
 }
 
 class PaddingMargenConst {
